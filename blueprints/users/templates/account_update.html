@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block content %}
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand nav-link mr-4" href="{{ url_for('user.login') }}">Msc. Portal</a>
+                <!-- Navbar Right Side -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('user.user_account') }}">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a id="updateLogout" class="nav-link" href="{{ url_for('user.logout') }}">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-sm-12 col-xs-12 mt-4 mb-2">
+                <div class="text-center">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} text-center">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                <form id="updateForm" method="post" action="" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="content-section">
+                        <div class="media col-sm-12 col-xs-12 justify-content-center pb-4">
+                            <img class="rounded-circle" src="{{ image_file }}">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-muted">{{ current_user.reg_number }}</h3>
+                            <p class="text-secondary">{{ current_user.email }}</p>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <fieldset class="form-group small">
+                            <legend class="border-bottom mb-4 text-center">Account Update</legend>
+                            <div class="form-group">
+                                {{ form.registration_number.label(class="form-control-static text-left") }}
+                                {% if form.registration_number.errors %}
+                                    {{ form.registration_number(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.registration_number.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.registration_number(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.surname.label(class="form-control-static text-left") }}
+                                {% if form.surname.errors %}
+                                    {{ form.surname(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.surname.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.surname(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.middle_name.label(class="form-control-static text-left") }}
+                                {% if form.middle_name.errors %}
+                                    {{ form.middle_name(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.middle_name.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.middle_name(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.first_name.label(class="form-control-static text-left") }}
+                                {% if form.first_name.errors %}
+                                    {{ form.first_name(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.first_name.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.first_name(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.password.label(class="form-control-static text-left") }}
+                                {% if form.password.errors %}
+                                    {{ form.password(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.password.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.password(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.email.label(class="form-control-static text-left") }}
+                                {% if form.email.errors %}
+                                    {{ form.email(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.email.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.email(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.picture.label() }}
+                                <div class="content-section">
+                                    {{ form.picture(class="form-control-file") }}
+                                </div>
+                                {% if form.picture.errors %}
+                                    {% for error in form.picture.errors %}
+                                        <span class="text-danger">{{ error }}</span><br>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group small">
+                            {{ form.submit(class="btn btn-outline-info btn-sm", id="updateSubmit") }}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

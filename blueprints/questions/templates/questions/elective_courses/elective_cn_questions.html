@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+    <script>
+        var Minutes = {{ num_counter }};
+    </script>
+    <div class="container">
+        <div class="content-section">
+            <div class="row">
+                <div class="col-8">
+                    <h4>Q.{{ num }} of {{ ntot }}</h4>
+                </div>
+                <div class="col-4">
+                    <div class="timer">
+                        <p id="time" class="text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <legend class="border-bottom mb-4 text-center">Question</legend>
+                    {{ question }}
+                </div>
+
+            </div>
+            <form id='answerform_python' method='post'>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <!-- action must match your next URL -->
+                <div class="form-group mt-5">
+                    <div class="mt-4 pt-2 mb-4 pb-2">
+                        <div class="form-check">
+                            <label class="form-check-label" for="r1">
+                                <input class="form-check-input" type="radio" name="answer_option" id="r1" value="A">
+                                {{ ans1 }}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-2 mb-4 pb-2">
+                        <div class="form-check">
+                            <label class="form-check-label" for="r2">
+                                <input class="form-check-input" type="radio" name="answer_option" id="r2" value="B">
+                                {{ ans2 }}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-2 mb-4 pb-2">
+                        <div class="form-check">
+                            <label class="form-check-label" for="r3">
+                                <input class="form-check-input" type="radio" name="answer_option" id="r3" value="C">
+                                {{ ans3 }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                {% if back_val == False %}
+                <div class="text-center mb-2">
+                    <input type='submit' value="{{ next_question }}" id="r8" formaction="/cn-elective-questions" class="btn btn-success"/>
+                </div>
+                {% else %}
+                    {% if switch == True %}
+                        <div class="text-center mb-2">
+                            <input type='submit' value="Previous Question" id="backwardValidator" formaction="/elective-question-back" class="btn btn-success"/>
+                            <input type='submit' value="{{ next_question }}" id="forwardValidator" formaction="/cn-elective-questions" class="btn btn-success"/>
+                        </div>
+                    {% else %}
+                        <div class="text-center mb-2">
+                            <input type='submit' value="Previous Question" id="r8" formaction="/elective-question-back" class="btn btn-success"/>
+                            <input type='submit' value="{{ next_question }}" id="r9" formaction="/cn-elective-questions" class="btn btn-success"/>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+{% block selected_javascript %}
+    <script src="{{ url_for('static', filename='js/elective.js') }}"></script>
+{% endblock selected_javascript %}

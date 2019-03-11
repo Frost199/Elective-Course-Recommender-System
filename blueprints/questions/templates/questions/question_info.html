@@ -1,0 +1,18 @@
+{% extends 'account.html' %}
+{% block page_content %}
+    <div class="container">
+        <div class="text-center">
+            This test is to to make a determination for you basedd on your performance, this result is likely to change
+            and you can still go with your preferred option. You have <span class="text-danger">30 minutes</span> for
+            the completion of the test.
+        </div>
+        <div class="justify-content-center">
+            <form method="post" action="">
+                {{ form.hidden_tag() }}
+                <div class="form-group small">
+                    {{ form.submit(class="btn btn-large btn-info") }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+PIL
+numpy
+pygal
+pandas
+scikit-learn
+matplotlib
+wtforms
+flask==1.0.2
+flask-debugtoolbar==0.10.1
+pytest-cov==2.6.0
+flake8==3.5.0
+redis==2.10.6
+celery

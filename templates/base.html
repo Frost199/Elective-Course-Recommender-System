@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/bootstrap-grid.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/bootstrap-reboot.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/font-awesome.min.css') }}"/>
+    {% if title %}
+        <title>Computer Science - {{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}"/>
+    {% else %}
+        <title>Computer Science - Portal</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.update.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+    {% endif %}
+</head>
+<body>
+{% block content %}{% endblock content %}
+<script src="{{ url_for('static', filename='js/vendor/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.bundle.min.js') }}"></script>
+{% block selected_javascript %}
+{% endblock selected_javascript %}
+<script>
+    $(function (){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $(document).ready(function(){
+        $('#sidebarCollapse').on('click',function(){
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+
+</body>
+</html>

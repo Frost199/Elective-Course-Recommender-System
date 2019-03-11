@@ -1,0 +1,31 @@
+
+{#            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="">#}
+{#                <span class="navbar-toggler-icon"></span>#}
+{#            </button>#}
+{#            <div class=" navbar-collapse" id="navbarToggle">#}
+{#                <div class="navbar-nav mr-auto">#}
+{#                    <a class="nav-item nav-link" href="">Home</a>#}
+{#                    <a class="nav-item nav-link" href="/about">About</a>#}
+{#                </div>#}
+{#                <!-- Navbar Right Side -->#}
+{#                <div class="navbar-nav">#}
+{#                    {% if current_user.username %}#}
+{#                        <a class="nav-link" href="{{ url_for("question_view.questions") }}">New Question</a>#}
+{#                        <li class="nav-item dropdown">#}
+{#                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"#}
+{#                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>#}
+{#                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">#}
+{#                                <a class="dropdown-item nav-link text-center"#}
+{#                                   href="{{ url_for("users_view.profile") }}">Profile</a>#}
+{#                                <a class="dropdown-item nav-link text-center"#}
+{#                                   href="{{ url_for("users_view.user_account") }}">Update Profile</a>#}
+{#                                <a class="dropdown-item nav-link text-center"#}
+{#                                   href="{{ url_for("users_view.logout_user") }}">Logout</a>#}
+{#                            </div>#}
+{#                        </li>#}
+{#                    {% else %}#}
+{#                        <a class="nav-item nav-link" href="{{ url_for("users_view.login_user") }}">Login</a>#}
+{#                        <a class="nav-item nav-link" href="{{ url_for("users_view.register_user") }}">Register</a>#}
+{#                    {% endif %}#}
+{#                </div>#}
+{#            </div>#}

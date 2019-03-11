@@ -1,0 +1,446 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+        <div class="container">
+            <a class="navbar-brand nav-link mr-4" href="{{ url_for('user.login') }}">Msc. Portal</a>
+            <!-- Navbar Right Side -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    {% if current_user.is_authenticated %}
+                        <li class="nav-item active">
+                            {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                            <a id="resultLogout" class="nav-link" href="{{ url_for('user.logout') }}">Logout</a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item active">
+                            {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                            <a class="nav-link" href="{{ url_for('page.about') }}">About</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+            {#                <div class="nav navbar-nav navbar-right">#}
+            {#                    <a class="nav-item nav-link" href="{{ url_for('page.about') }}">About</a>#}
+            {#                </div>#}
+        </div>
+    </nav>
+</header>
+<main role="main" class="container">
+    <div class="container">
+        {% if "Theoretical Computing" in sel_courses %}
+            <br><span class="text-danger">NOTE: </span><span class="text-info">
+                                SORRY, THEORETICAL COMPUTING IS A NEW AREA OF SPECIALIZATION IN THE DEPARTMENT,
+                                THEREFORE, THERE IS NO PAST RECORD OF STUDENTS</span><br><br>
+        {% endif %}
+        {% for i in splited_course %}
+            {% if i == "Artificial Intelligence" %}
+                <div class="content-section">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <legend class="border-bottom mb-4 text-center font-weight-bold">{{ ai_pie_chart }}</legend>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ ai_cos843_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance below 20, Exam performance from 40 - 60</td>
+                                    <td>{{ ai_first_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance below 20, Exam performance from 60 - 72</td>
+                                    <td>{{ ai_second_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance above 15, Exam performance from 37 - 58</td>
+                                    <td>{{ ai_third_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance with a maximum of 21, Exam performance from 72 - 92
+                                    </td>
+                                    <td>{{ ai_fourth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 38</td>
+                                    <td>{{ ai_fifth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance above 16, Exam performance from 58 - 79</td>
+                                    <td>{{ ai_sixth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ ai_cos828_data|safe }}>
+
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance from 15 below, Exam performance from 63 - 84</td>
+                                    <td>{{ ai_first_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance above 16, Exam performance from 60 - 56</td>
+                                    <td>{{ ai_second_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance below 16, Exam performance from 41 - 63</td>
+                                    <td>{{ ai_third_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 38</td>
+                                    <td>{{ ai_fourth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance from 11 above, Exam performance from 71 - 90</td>
+                                    <td>{{ ai_fifth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance above 14, Exam performance from 58 - 70</td>
+                                    <td>{{ ai_sixth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            {% if i == "Computer Networks" %}
+                <div class="content-section">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <legend class="border-bottom mb-4 text-center font-weight-bold">{{ cn_pie_chart }}</legend>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ cn_cos847_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance below 20 but majority between 10 - 20, Exam performance
+                                        from 58 - 72
+                                    </td>
+                                    <td>{{ cn_first_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance below 15, Exam performance from 44 - 61</td>
+                                    <td>{{ cn_second_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 42</td>
+                                    <td>{{ cn_third_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance below 22, Exam performance from 73 - 92</td>
+                                    <td>{{ cn_fourth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance above 15, Exam performance from 44 - 63</td>
+                                    <td>{{ cn_fifth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance above 18, Exam performance from 64 - 89</td>
+                                    <td>{{ cn_sixth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ cn_cos842_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance from 16 below, Exam performance from 44 - 63</td>
+                                    <td>{{ cn_first_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance from 15 above, Exam performance from 58 - 70</td>
+                                    <td>{{ cn_second_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 43</td>
+                                    <td>{{ cn_third_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance from 15 above, Exam performance from 44 - 57</td>
+                                    <td>{{ cn_fourth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance below 18, Exam performance majority from 65 - 81 with
+                                        one Score at 92
+                                    </td>
+                                    <td>{{ cn_fifth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance from 19 above, Exam performance from 69 - 80</td>
+                                    <td>{{ cn_sixth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            {% if i == "Software Engineering" %}
+                <div class="content-section">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <legend class="border-bottom mb-4 text-center font-weight-bold">{{ se_pie_chart }}</legend>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ se_cos829_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance from 17 above, Exam performance from 68 - 87</td>
+                                    <td>{{ se_first_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance from 16 above, Exam performance from 56 - 67</td>
+                                    <td>{{ se_second_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance below 17, Exam performance from 47 - 62</td>
+                                    <td>{{ se_third_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 46</td>
+                                    <td>{{ se_fourth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance from 16 above, Exam performance from 42 - 56</td>
+                                    <td>{{ se_fifth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance from 16 below, Exam performance from 64 - 92</td>
+                                    <td>{{ se_sixth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ se_cos826_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance from 17 below, Exam performance from 67 - 95</td>
+                                    <td>{{ se_first_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance from 0 - 26, Exam performance below 47</td>
+                                    <td>{{ se_second_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance from 15 above, Exam performance from 38 - 56</td>
+                                    <td>{{ se_third_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance above 16, Exam performance from 67 - 87</td>
+                                    <td>{{ se_fourth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance above 16, Exam performance from 57 - 68</td>
+                                    <td>{{ se_fifth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance from 16 below, Exam performance from 47 - 66</td>
+                                    <td>{{ se_sixth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            {% if i == "Systems Engineering" %}
+                <div class="content-section">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <legend class="border-bottom mb-4 text-center font-weight-bold">{{ sye_pie_chart }}</legend>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ sye_cos819_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 40</td>
+                                    <td>{{ sye_first_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance from 15 above, Exam performance from 52 - 67</td>
+                                    <td>{{ sye_second_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance above 15, Exam performance from 64 - 85</td>
+                                    <td>{{ sye_third_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance below 16, Exam performance from 66 - 90</td>
+                                    <td>{{ sye_fourth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance from 18 below, Exam performance from 33 - 52</td>
+                                    <td>{{ sye_fifth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance from 16 below, Exam performance from 46 - 63</td>
+                                    <td>{{ sye_sixth_cluster_1_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <embed type="image/svg+xml" src={{ sye_cos808_data|safe }}>
+                            <table class="table table-striped table-dark table-responsive">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">No of students</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Test performance from 17 below, Exam performance from 67 - 90</td>
+                                    <td>{{ sye_first_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Test performance from 14 below, Exam performance from 49 - 66</td>
+                                    <td>{{ sye_second_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Test performance below 20, Exam performance from 39 - 54</td>
+                                    <td>{{ sye_third_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Test performance from 0 - 30, Exam performance below 46</td>
+                                    <td>{{ sye_fourth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Test performance from 13 below , Exam performance from 54 - 68</td>
+                                    <td>{{ sye_fifth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Test performance 18 above, Exam performance from 67 - 79</td>
+                                    <td>{{ sye_sixth_cluster_2_no_of_students }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</main>
+{% endblock content %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand nav-link mr-4" href="{{ url_for('user.login') }}">Msc. Portal</a>
+                <!-- Navbar Right Side -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        {% if current_user.is_authenticated %}
+                            <li class="nav-item active">
+                                {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                                <a class="nav-link" href="{{ url_for('user.logout') }}">Logout</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item active">
+                                {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                                <a class="nav-link" href="{{ url_for('page.about') }}">About</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                {#                <div class="nav navbar-nav navbar-right">#}
+                {#                    <a class="nav-item nav-link" href="{{ url_for('page.about') }}">About</a>#}
+                {#                </div>#}
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 col-sm-12 col-xs-12 mt-4">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} text-center">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <div class="content-section">
+                    <form id="loginForm" method="post" action="">
+                        {{ form.hidden_tag() }}
+                        <fieldset class="form-group small">
+                            <legend class="border-bottom mb-4 text-center">Log In</legend>
+                            <div class="form-group">
+                                {{ form.registration_number.label(class="form-control-static text-left") }}
+                                {% if form.registration_number.errors %}
+                                    {{ form.registration_number(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.registration_number.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.registration_number(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.password.label(class="form-control-static text-left") }}
+                                {% if form.password.errors %}
+                                    {{ form.password(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.password.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.password(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-check">
+                                {{ form.remember_me(class="form-check-input") }}
+                                {{ form.remember_me.label(class="form-check-label") }}
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group small">
+                            {{ form.submit(class="btn btn-outline-info btn-sm", id="loginSubmit") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

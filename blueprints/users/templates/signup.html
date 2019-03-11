@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block content %}
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand nav-link mr-4" href="{{ url_for('user.login') }}">Msc. Portal</a>
+                <!-- Navbar Right Side -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('page.about') }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+            <div class="row justify-content-center text-center small">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="row justify-content-center">
+                <div class="content-section col-sm-4">
+                    <form id="signupForm" method="post" action="">
+                        {{ form.hidden_tag() }}
+                        <fieldset class="form-group small">
+                            <legend class="border-bottom mb-4 text-center">Register</legend>
+                            <div class="form-group">
+                                {{ form.registration_number.label(class="form-control-static text-left") }}
+                                {% if form.registration_number.errors %}
+                                   {{ form.registration_number(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.registration_number.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% elif wrong_reg %}
+                                    {{ form.registration_number(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        <span>{{ wrong_reg }}</span>
+                                    </div>
+                                {% else %}
+                                    {{ form.registration_number(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.surname.label(class="form-control-static text-left") }}
+                                {% if form.surname.errors %}
+                                   {{ form.surname(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.surname.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.surname(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.middle_name.label(class="form-control-static text-left") }}
+                                {% if form.middle_name.errors %}
+                                   {{ form.middle_name(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.middle_name.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.middle_name(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.first_name.label(class="form-control-static text-left") }}
+                                {% if form.first_name.errors %}
+                                   {{ form.first_name(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.first_name.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.first_name(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.email.label(class="form-control-static text-left") }}
+                                {% if form.email.errors %}
+                                   {{ form.email(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.email.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.email(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.password.label(class="form-control-static text-left") }}
+                                {% if form.password.errors %}
+                                   {{ form.password(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.password.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.password(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                {{ form.confirm_password.label(class="form-control-static text-left") }}
+                                {% if form.confirm_password.errors %}
+                                   {{ form.confirm_password(class="form-control form-control-sm mr-auto is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.confirm_password.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.confirm_password(class="form-control form-control-sm mr-auto") }}
+                                {% endif %}
+                            </div>
+
+                        </fieldset>
+
+                        <div class="form-group small">
+                            {{ form.submit(class="btn btn-outline-info btn-sm", id="signupSubmit") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row form-group justify-content-center">
+                <small class="text-muted small">
+                    Already Have An Account?
+                    <span data-toggle="tooltip" class="text-info" title="Login" data-placement="bottom">
+                        <a class="ml-2" href="{{ url_for('user.login') }}">Sign In</a>
+                    </span>
+                </small>
+            </div>
+    </main>
+{% endblock content %}

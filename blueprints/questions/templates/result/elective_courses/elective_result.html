@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand nav-link mr-4" href="{{ url_for('user.login') }}">Msc. Portal</a>
+                <!-- Navbar Right Side -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        {% if current_user.is_authenticated %}
+                            <li class="nav-item active">
+                                {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                                <a id="resultLogout" class="nav-link" href="{{ url_for('user.logout') }}">Logout</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item active">
+                                {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                                <a class="nav-link" href="{{ url_for('page.about') }}">About</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                {#                <div class="nav navbar-nav navbar-right">#}
+                {#                    <a class="nav-item nav-link" href="{{ url_for('page.about') }}">About</a>#}
+                {#                </div>#}
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="container">
+            <div class="content-section">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <legend class="border-bottom mb-4 text-center">Thanks For Taking This Test</legend>
+
+                        <p>Total Questions: <span class="text-info">{{ total_questions_from_course }}</span></p>
+                        <p>Total Answered: <span class="text-info">{{ total_questions_answered }}</span></p>
+                        {% if total_correct > 14 %}
+                            <p>Correct: <span class="text-success">{{ total_correct }}</span></p>
+                        {% else %}
+                            <p>Correct: <span class="text-danger">{{ total_correct }}</span></p>
+                        {% endif %}
+                        <p>Failed: <span class="text-danger">{{ total_failed }}</span></p>
+                        <p class="border-bottom"></p>
+                        {% if user_resp == "got_1" %}
+                            <p>Suggested Elective Courses</p>
+                            <span class="text-success">{{ sel_courses }}</span><br>
+                        {% else %}
+                            <p class="text-info">{{ user_resp }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock content %}

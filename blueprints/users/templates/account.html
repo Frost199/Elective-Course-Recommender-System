@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="container">
+                <div class="media justify-content-center align-self-auto">
+                    {#                    <img class="rounded-circle account-image" id="override" src="{{ url_for('static', filename='assets/pictures/default.png') }}">#}
+                    <img class="rounded-circle account-image" id="override" src="{{ image_file }}">
+                </div>
+                <div class="media-body text-center my-2">
+                    <h2 class="small font-weight-bold" id="info_cred">{{ current_user.reg_number }}</h2>
+                    <h2 class="small font-weight-bold" id="info_cred">{{ current_user.surname }}</h2>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components small">
+                <li><a href="{{ url_for('user.user_account') }}">Home<span class="sr-only">(current)</span></a></li>
+                <li class="active">
+                    <a href="#aosSubmenu" data-toggle="collapse" aria-expanded="false"
+                       class="dropdown-toggle">Area Of Specialization</a>
+                    <ul class="collapse list-unstyled" id="aosSubmenu">
+                        <li><a href="{{ url_for('aos_test.index') }}">Take Test</a></li>
+                        <li><a href="{{ url_for('elective_course.index_for_individual') }}">Have A Specialization In Mind?</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('elective_course.index') }}">Predict Courses</a></li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                       class="dropdown-toggle">Account</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="{{ url_for('user.update') }}">Update Profile</a></li>
+                        <li><a id="logoutUser" href="{{ url_for('user.logout') }}">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <button type="button" id="sidebarCollapse" class="btn bg-steel">
+                <i class="fa fa-align-justify" id="info_cred"></i> <span id="info_cred">Menu</span>
+            </button>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 small">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} text-center">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+
+            {#   PAGE CONTENT GOES HERE     #}
+        {% block page_content %}
+            <div class="container">
+            <div class="text-center">
+                {{ current_user.surname }} {{ current_user.first_name }}, welcome to your Portal
+            </div>
+            </div>
+        {% endblock page_content %}
+{#            <div class="line"></div>#}
+        </div>
+    </div>
+{% endblock content %}

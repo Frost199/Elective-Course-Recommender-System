@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block content %}
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand nav-link mr-4" href="{{ url_for('user.login') }}">Msc. Portal</a>
+                <!-- Navbar Right Side -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        {% if current_user.is_authenticated %}
+                            <li class="nav-item active">
+                                {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                                <a id="resultLogout" class="nav-link" href="{{ url_for('user.logout') }}">Logout</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item active">
+                                {#                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+                                <a class="nav-link" href="{{ url_for('page.about') }}">About</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                {#                <div class="nav navbar-nav navbar-right">#}
+                {#                    <a class="nav-item nav-link" href="{{ url_for('page.about') }}">About</a>#}
+                {#                </div>#}
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="container">
+            {% for i in splited_course %}
+                {% if i == "Artificial Intelligence" %}
+                    <div class="content-section">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <legend class="border-bottom mb-4 text-center font-weight-bold">{{ ai_pie_chart }}</legend>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <embed type="image/svg+xml" src={{ ai_cos843_data|safe }}>
+                                <p>Region 1 - Test performance below 20, Exam performance from 40 - 60</p>
+                                <p>Region 2 - Test performance below 20, Exam performance from 60 - 72</p>
+                                <p>Region 3 - Test performance above 15, Exam performance from 37 - 58</p>
+                                <p>Region 4 - Test performance with a maximum of 21, Exam performance from 72 - 92</p>
+                                <p>Region 5 - Test performance from 0 - 30, Exam performance below 38</p>
+                                <p>Region 6 - Test performance above 16, Exam performance from 58 - 79</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <embed type="image/svg+xml" src={{ ai_cos828_data|safe }}>
+                                <p>Region 1 - Test performance from 15 below, Exam performance from 63 - 84</p>
+                                <p>Region 2 - Test performance above 16, Exam performance from 60 - 56</p>
+                                <p>Region 3 - Test performance below 16, Exam performance from 41 - 63</p>
+                                <p>Region 4 - Test performance from 0 - 30, Exam performance below 38</p>
+                                <p>Region 5 - Test performance from 11 above, Exam performance from 71 - 90</p>
+                                <p>Region 6 - Test performance above 14, Exam performance from 58 - 70</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                {% if i == "Computer Networks" %}
+                    <div class="content-section">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <legend class="border-bottom mb-4 text-center font-weight-bold">{{ cn_pie_chart }}</legend>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <embed type="image/svg+xml" src={{ cn_cos847_data|safe }}>
+                                <p>Region 1 - Test performance below 20 but majority between 10 - 20, Exam performance
+                                    from
+                                    58 - 72</p>
+                                <p>Region 2 - Test performance below 15, Exam performance from 44 - 61</p>
+                                <p>Region 3 - Test performance from 0 - 30, Exam performance below 42</p>
+                                <p>Region 4 - Test performance below 22, Exam performance from 73 - 92</p>
+                                <p>Region 5 - Test performance above 15, Exam performance from 44 - 63</p>
+                                <p>Region 6 - Test performance above 18, Exam performance from 64 - 89</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <embed type="image/svg+xml" src={{ cn_cos842_data|safe }}>
+                                <p>Region 1 - Test performance from 16 below, Exam performance from 44 - 63</p>
+                                <p>Region 2 - Test performance from 15 above, Exam performance from 58 - 70</p>
+                                <p>Region 3 - Test performance from 0 - 30, Exam performance below 43</p>
+                                <p>Region 4 - Test performance from 15 above, Exam performance from 44 - 57</p>
+                                <p>Region 5 - Test performance below 18, Exam performance majority from 65 - 81 with one
+                                    Score at 92</p>
+                                <p>Region 6 - Test performance from 19 above, Exam performance from 69 - 80</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                {% if i == "Software Engineering" %}
+                    <div class="content-section">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <legend class="border-bottom mb-4 text-center font-weight-bold">{{ se_pie_chart }}</legend>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">>
+                                <embed type="image/svg+xml" src={{ se_cos829_data|safe }}>
+                                <p>Region 1 - Test performance from 17 above, Exam performance from 68 - 87</p>
+                                <p>Region 2 - Test performance from 16 above, Exam performance from 56 - 67</p>
+                                <p>Region 3 - Test performance below 17, Exam performance from 47 - 62</p>
+                                <p>Region 4 - Test performance from 0 - 30, Exam performance below 46</p>
+                                <p>Region 5 - Test performance from 16 above, Exam performance from 42 - 56</p>
+                                <p>Region 6 - Test performance from 16 below, Exam performance from 64 - 92</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <embed type="image/svg+xml" src={{ se_cos826_data|safe }}>
+                                <p>Region 1 - Test performance from 17 below, Exam performance from 67 - 95</p>
+                                <p>Region 2 - Test performance from 0 - 26, Exam performance below 47</p>
+                                <p>Region 3 - Test performance from 15 above, Exam performance from 38 - 56</p>
+                                <p>Region 4 - Test performance above 16, Exam performance from 67 - 87</p>
+                                <p>Region 5 - Test performance above 16, Exam performance from 57 - 68</p>
+                                <p>Region 6 - Test performance from 16 below, Exam performance from 47 - 66</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                {% if i == "Systems Engineering" %}
+                    <div class="content-section">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <legend class="border-bottom mb-4 text-center font-weight-bold">{{ sye_pie_chart }}</legend>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">>
+                                <embed type="image/svg+xml" src={{ sye_cos819_data|safe }}>
+                                <p>Region 1 - Test performance from 0 - 30, Exam performance below 40</p>
+                                <p>Region 2 - Test performance from 15 above, Exam performance from 52 - 67</p>
+                                <p>Region 3 - Test performance above 15, Exam performance from 64 - 85</p>
+                                <p>Region 4 - Test performance below 16, Exam performance from 66 - 90</p>
+                                <p>Region 5 - Test performance from 18 below, Exam performance from 33 - 52</p>
+                                <p>Region 6 - Test performance from 16 below, Exam performance from 46 - 63</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <embed type="image/svg+xml" src={{ sye_cos808_data|safe }}>
+                                <p>Region 1 - Test performance from 17 below, Exam performance from 67 - 90</p>
+                                <p>Region 2 - Test performance from 14 below, Exam performance from 49 - 66</p>
+                                <p>Region 3 - Test performance below 20, Exam performance from 39 - 54</p>
+                                <p>Region 4 - Test performance from 0 - 30, Exam performance below 46</p>
+                                <p>Region 5 - Test performance from 13 below , Exam performance from 54 - 68</p>
+                                <p>Region 6 - Test performance 18 above, Exam performance from 67 - 79</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+            {% endfor %}
+        </div>
+    </main>
+{% endblock content %}
