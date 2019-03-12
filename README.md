@@ -35,3 +35,29 @@ This is a way of evaluating our models for the best model to be used for our pre
 **Actual Class** | **Class 1** | _True Positive (TP)_ | _False Negative (FN)_
 |   | **class 0** | *False Positive (FP)* | _True Negative (TN)_
 
+
+For this project this is the Confusion matrix below
+![confusion_matrix](https://user-images.githubusercontent.com/25561713/54164625-9725e080-445d-11e9-8edf-1f4395ea2629.png)
+
+
+## Accuracy
+<img src="http://bit.ly/2Cb1p0r" align="center" border="0" alt=" \frac{True Positive + True Negative}{ Total Points} " width="256" height="43" />
+
+## Precision
+<img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Cfrac%7BTrue%20Positive%7D%7B%20True%20Positive%20%2B%20False%20Positive%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \frac{True Positive}{ True Positive + False Positive} " width="250" height="44" />
+
+## Recall
+<img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Cfrac%7BTrue%20Positive%7D%7B%20True%20Positive%20%2B%20False%20Negative%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \frac{True Positive}{ True Positive + False Negative} " width="261" height="47" />
+
+## F1 Score
+<img src="http://bit.ly/2SUZLWx" align="center" border="0" alt=" 2*\frac{Precision * Recall}{ Precision + Recall}" width="192" height="44" />
+
+### Evaluation Metrics for our project
+
+Evaluation Metrics |   |   | Models |   |   |   |
+------------------ | - | - | ------ | - | - | - |
+|   | Linear SVM | Kernel SVM | Decison Trees | Logistic Regression | Naïve Bayes | K-Nearest Neighbours
+Accuracy | 93.307% | 97.633% | 99.409% | 37.008% | 99.409% | 99.213%
+Precision | 93.307% | 97.633% | 99.409% | 37.008% | 99.409% | 99.213%
+Recall | 0.741 | 0.783 | 0.912 | 0.147 | 0.912 | 0.906
+F1 Score |0.7 | 0.74 | 0.902 | 0.093 | 0.902 | 0.896
