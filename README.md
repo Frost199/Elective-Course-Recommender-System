@@ -27,4 +27,11 @@ The models used for training are:
 * Logistic Regression
 
 ## Evaluation Metrics
-This is a way of evaluating our models for the best model to be used for our predictions,the confusion matrix is shown below
+This is a way of evaluating our models for the best model to be used for our predictions, A basic confusion matrix is shown below
+
+|   |   | Predicted Class |   |
+| - | - | --------------- | - |
+|   |   | **Class 1** | **Class 0**
+**Actual Class** | **Class 1** | _True Positive (TP)_ | _False Negative (FN)_
+|   | **class 0** | *False Positive (FP)* | _True Negative (TN)_
+
