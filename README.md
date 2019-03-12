@@ -61,3 +61,24 @@ Accuracy | 93.307% | 97.633% | 99.409% | 37.008% | 99.409% | 99.213%
 Precision | 93.307% | 97.633% | 99.409% | 37.008% | 99.409% | 99.213%
 Recall | 0.741 | 0.783 | 0.912 | 0.147 | 0.912 | 0.906
 F1 Score |0.7 | 0.74 | 0.902 | 0.093 | 0.902 | 0.896
+
+
+
+## Flask
+Here the Admin creates the students as uts assumed that each student is registered for the session
+No Registration was performed.
+
+The following below are the task list:
+- [x] Login
+- [x] Update Profile
+- [x] Online Quiz
+- [x] Admin Dashboard
+- [x] Create Users
+- [x] Delete Users
+- [x] Regex matching for Registration Number
+- [x] Online Prediction
+- [x] Online viewing of pie charts for clustered analysis
+- [ ] Validation Emails
+- [ ] saving individual scores after each predictions for personalised performance anyalysis
+- [ ] Admin tracking students preferences
+
