@@ -82,3 +82,8 @@ The following below are the task list:
 - [ ] saving individual scores after each predictions for personalised performance anyalysis
 - [ ] Admin tracking students preferences
 
+## How to run
+* First make sure you run database.py first to create a database file
+* Secondly make sure the "run_fist_time.txt" is empty,do not delete
+* then run python run.py in he root folder
+
