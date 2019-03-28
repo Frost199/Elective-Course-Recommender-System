@@ -1,7 +1,7 @@
 # Elective-Course-Recommender-System
 This is a web based elective course recommender system implemented with flask and Sklearn
 
-The Project is a case study for the **Department of Computer Science, University of Nigeria Nsukka**. THeis project involves two part,
+The Project is a case study for the **Department of Computer Science, University of Nigeria Nsukka**. This project involves two part,
 the first part deals with the selection of Area of Specialization for a Masters student, this is done by asking series of questions and then a ranking
 system is used to generate an area of specializtion from the persons score. 
 
