@@ -2,13 +2,13 @@ import numpy as np
 
 
 # New Prediction
-from models.Prediction.Training import KnnTraining
+from models.Prediction.Training import DecisionTreeClassifier
 
 
 def predict_grade_range(scores, saved_model):
     returned_grades = list()
     student_mark = []
-    model_year = KnnTraining()
+    model_year = DecisionTreeClassifier()
     new_input_value = [scores]
     new_input = np.array(new_input_value)
     new_input = new_input.reshape(-1, 1)

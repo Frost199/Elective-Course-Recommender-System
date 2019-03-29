@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="154daea8-2601-4582-92d6-ec06af62c965" name="Default" comment="" />
+    <list default="true" id="154daea8-2601-4582-92d6-ec06af62c965" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/training_models_used/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/training_models_used/naive_bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3f59fce5-f204-47d6-b46d-b62c7386f71d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/525aa793-d230-4c8c-8bab-9f305fd52b69.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9376f095-36d5-4d6a-a7ca-5c76de29b0cb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/Credentials.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_time_server_run.txt" beforeDir="false" afterPath="$PROJECT_DIR$/first_time_server_run.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Prediction/Prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Prediction/Prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Prediction/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Prediction/Training.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,91 +75,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blueprints/questions/views.py">
+      <file leaf-file-name="Training.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Prediction/Training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2257">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="77">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prediction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Prediction/Prediction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#25322#41628#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ai_cluster.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/ai_cluster.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="system_eng_cluster.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/system_eng_cluster.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="processed_questions_and_answers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/processed_questions_and_answers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1122" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="processedlistofdictionaries.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/processedlistofdictionaries.py">
+      <file leaf-file-name="first_time_server_run.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first_time_server_run.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="kmeans_cluster.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/kmeans_cluster.py">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cluster_process.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/cluster_process.py">
+      <file leaf-file-name="decision_tree_classifier.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-459">
+            <state relative-caret-position="51">
+              <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#26#94#1" expanded="true" />
+                <element signature="e#195#214#0" expanded="true" />
+                <element signature="e#2436#3497#0" expanded="true" />
+                <element signature="e#4942#6885#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/database.py">
+      <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/training_models_used/linear_svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="63" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="63" />
+            <state relative-caret-position="253">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="e#24#92#1" expanded="true" />
+                <element signature="e#107#126#0" expanded="true" />
+                <element signature="e#2189#3234#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_credential" pinned="false" current-in-tab="true">
-        <entry file="das://2c72a537-0aac-4b2b-9df8-19c625cc2b0a/schema/main/table/users_credential">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="kernel_svm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/training_models_used/kernel_svm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="e#24#92#1" expanded="true" />
+                <element signature="e#107#126#0" expanded="true" />
+                <element signature="e#2186#3231#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="computer_networks.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/computer_networks.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
+      <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/training_models_used/knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="70" />
+              <folding>
+                <element signature="e#25#93#1" expanded="true" />
+                <element signature="e#191#210#0" expanded="true" />
+                <element signature="e#2834#3872#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/training_models_used/logistic_regression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="e#25#93#1" expanded="true" />
+                <element signature="e#200#219#0" expanded="true" />
+                <element signature="e#2217#3271#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="naive_bayes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/training_models_used/naive_bayes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="e#26#94#1" expanded="true" />
+                <element signature="e#191#210#0" expanded="true" />
+                <element signature="e#2287#3333#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -154,8 +201,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -196,26 +243,20 @@
       <replace />
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blueprints/users/templates/signup.html" />
-        <option value="$PROJECT_DIR$/blueprints/questions/ai.py" />
-        <option value="$PROJECT_DIR$/models/aos_questions_and_answer/processed_questions_and_answers.py" />
-        <option value="$PROJECT_DIR$/blueprints/questions/templates/questions/elective_courses/index.html" />
-        <option value="$PROJECT_DIR$/blueprints/questions/__init__.py" />
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/blueprints/questions/templates/questions/elective_courses/elective_questions.html" />
         <option value="$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/artificial_intelligence/ai_elective_courses_questions.csv" />
         <option value="$PROJECT_DIR$/blueprints/questions/templates/result/elective_result.html" />
         <option value="$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/artificial_intelligence/procesing_ai_elective_courses.py" />
         <option value="$PROJECT_DIR$/nnnn.py" />
         <option value="$PROJECT_DIR$/blueprints/questions/templates/questions/elective_courses/ai_result.html" />
         <option value="$PROJECT_DIR$/models/TrainingAndTestingModel/training.py" />
-        <option value="$PROJECT_DIR$/models/Prediction/Training.py" />
         <option value="$PROJECT_DIR$/database/database.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/first_time_server_run.txt" />
         <option value="$PROJECT_DIR$/blueprints/users/templates/admin.html" />
         <option value="$PROJECT_DIR$/blueprints/users/templates/admin/update.html" />
         <option value="$PROJECT_DIR$/blueprints/users/templates/admin/edit_user.html" />
@@ -250,6 +291,15 @@
         <option value="$PROJECT_DIR$/static/js/timer.js" />
         <option value="$PROJECT_DIR$/blueprints/questions/elective_courses.py" />
         <option value="$PROJECT_DIR$/blueprints/questions/views.py" />
+        <option value="$PROJECT_DIR$/models/Prediction/Training.py" />
+        <option value="$PROJECT_DIR$/first_time_server_run.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/models/training_models_used/naive_bayes.py" />
+        <option value="$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py" />
+        <option value="$PROJECT_DIR$/models/training_models_used/linear_svm.py" />
+        <option value="$PROJECT_DIR$/models/training_models_used/kernel_svm.py" />
+        <option value="$PROJECT_DIR$/models/training_models_used/knn.py" />
+        <option value="$PROJECT_DIR$/models/training_models_used/logistic_regression.py" />
       </list>
     </option>
   </component>
@@ -283,6 +333,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -322,22 +375,19 @@
               <item name="MscWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="MscWeb" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="aos_questions_and_answer" type="462c0819:PsiDirectoryNode" />
+              <item name="Prediction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MscWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="MscWeb" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="aos_questions_and_answer" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+              <item name="training_models_used" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MscWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="MscWeb" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="aos_questions_and_answer" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
-              <item name="clustering" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -526,12 +576,11 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50453174" side_tool="true" weight="0.32715008" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32715008" />
       <window_info anchor="bottom" id="Python Console" order="17" weight="0.32715008" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4954683" weight="0.32715008" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32715008" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32715008" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33055976" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32715008" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3419062" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" sideWeight="0.49924356" weight="0.3288364" />
       <window_info anchor="right" id="Nativescript Palette" order="6" weight="0.3290469" />
       <window_info anchor="right" id="Database" order="4" weight="0.32829046" />
@@ -548,42 +597,69 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32715008" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32715008" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="DB Execution Console" order="16" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" sideWeight="0.49924356" weight="0.3288364" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33055976" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33055976" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49874687" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" order="16" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4954683" weight="0.32715008" />
       <window_info id="DB Browser" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32715008" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" x="0" y="0" width="294" height="552" id="Documentation" order="5" sideWeight="0.5012531" side_tool="true" weight="0.32701063" />
       <window_info anchor="right" id="Database" order="4" weight="0.32829046" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="14" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32715008" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50453174" side_tool="true" weight="0.32715008" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49874687" weight="0.3290469" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32715008" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39966273" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32715008" />
       <window_info anchor="right" id="Nativescript Palette" order="6" weight="0.3290469" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39966273" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32715008" />
       <window_info anchor="bottom" id="Python Console" order="17" weight="0.32715008" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -604,105 +680,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/systems_engineering/se_elective_courses_questions.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Prediction/dataset/software_engineering_courses_scores.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Prediction/dataset/system_engineering_courses_scores.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blueprints/questions/templates/result/elective_courses/elective_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="39" column="98" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
-          <folding>
-            <element signature="e#50#1898#0#HTML" expanded="true" />
-            <element signature="e#87#1884#0#HTML" expanded="true" />
-            <element signature="e#168#1869#0#HTML" expanded="true" />
-            <element signature="e#356#640#0#HTML" expanded="true" />
-            <element signature="e#657#1615#0#HTML" expanded="true" />
-            <element signature="e#731#1592#0#HTML" expanded="true" />
-            <element signature="e#854#1170#0#HTML" expanded="true" />
-            <element signature="e#1234#1530#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/systems_engineering/se_elective_questions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="71" column="57" lean-forward="true" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/systems_engineering/procesing_se_elective_courses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#730#873#0" expanded="true" />
-            <element signature="e#996#1727#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/software_engineering/soe_elective_questions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/artificial_intelligence/ai_elective_questions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/elective_courses_questions/computer_networks/procesing_cn_elective_courses.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#730#873#0" expanded="true" />
-            <element signature="e#986#1624#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
-          <folding>
-            <element signature="e#30#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,10 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#730#873#0" expanded="true" />
-            <element signature="e#986#1625#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,11 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#104#653#0" expanded="true" />
-            <element signature="e#730#873#0" expanded="true" />
-            <element signature="e#1006#1829#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,124 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7514">
           <caret line="442" column="20" selection-start-line="442" selection-start-column="20" selection-end-line="442" selection-end-column="20" />
-          <folding>
-            <element signature="n#header#0;n#!!top" expanded="true" />
-            <element signature="n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,15 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="e#357#641#0#HTML" expanded="true" />
-            <element signature="e#1235#1531#0#HTML" expanded="true" />
-            <element signature="e#1669#3199#0#HTML" expanded="true" />
-            <element signature="e#1714#3186#0#HTML" expanded="true" />
-            <element signature="e#1750#3171#0#HTML" expanded="true" />
-            <element signature="e#1796#3152#0#HTML" expanded="true" />
-            <element signature="e#1834#3129#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,10 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding>
-            <element signature="e#2482#5085#0#HTML" expanded="true" />
-            <element signature="e#2532#5062#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,36 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1901">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#2;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#3;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#4;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#5;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#5;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#6;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#6;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,22 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
-          <folding>
-            <element signature="e#111#810#0#HTML" expanded="true" />
-            <element signature="e#151#503#0#HTML" expanded="true" />
-            <element signature="e#520#791#0#HTML" expanded="true" />
-            <element signature="e#1041#1181#0#HTML" expanded="true" />
-            <element signature="e#1633#2110#0#HTML" expanded="true" />
-            <element signature="e#1673#1799#0#HTML" expanded="true" />
-            <element signature="e#1820#2088#0#HTML" expanded="true" />
-            <element signature="e#2153#3377#0#HTML" expanded="true" />
-            <element signature="e#2189#2375#0#HTML" expanded="true" />
-            <element signature="e#2388#2995#0#HTML" expanded="true" />
-            <element signature="e#2445#2976#0#HTML" expanded="true" />
-            <element signature="e#2701#2842#0#HTML" expanded="true" />
-            <element signature="e#3089#3285#0#HTML" expanded="true" />
-            <element signature="e#3125#3266#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,9 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#6;n#fieldset#0;n#div#1;n#form#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,31 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-          <folding>
-            <element signature="e#50#113#0#HTML" expanded="true" />
-            <element signature="e#118#3570#0#HTML" expanded="true" />
-            <element signature="e#150#3559#0#HTML" expanded="true" />
-            <element signature="e#192#530#0#HTML" expanded="true" />
-            <element signature="e#226#323#0#HTML" expanded="true" />
-            <element signature="e#340#511#0#HTML" expanded="true" />
-            <element signature="e#380#488#0#HTML" expanded="true" />
-            <element signature="e#544#773#0#HTML" expanded="true" />
-            <element signature="e#578#753#0#HTML" expanded="true" />
-            <element signature="e#786#3544#0#HTML" expanded="true" />
-            <element signature="e#987#2323#0#HTML" expanded="true" />
-            <element signature="e#1037#1444#0#HTML" expanded="true" />
-            <element signature="e#1095#1417#0#HTML" expanded="true" />
-            <element signature="e#1148#1386#0#HTML" expanded="true" />
-            <element signature="e#1465#1872#0#HTML" expanded="true" />
-            <element signature="e#1523#1845#0#HTML" expanded="true" />
-            <element signature="e#1576#1814#0#HTML" expanded="true" />
-            <element signature="e#1893#2300#0#HTML" expanded="true" />
-            <element signature="e#1951#2273#0#HTML" expanded="true" />
-            <element signature="e#2004#2242#0#HTML" expanded="true" />
-            <element signature="e#2383#2575#0#HTML" expanded="true" />
-            <element signature="e#2671#3054#0#HTML" expanded="true" />
-            <element signature="e#3110#3464#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,31 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-          <folding>
-            <element signature="e#50#113#0#HTML" expanded="true" />
-            <element signature="e#118#3573#0#HTML" expanded="true" />
-            <element signature="e#150#3562#0#HTML" expanded="true" />
-            <element signature="e#192#530#0#HTML" expanded="true" />
-            <element signature="e#226#323#0#HTML" expanded="true" />
-            <element signature="e#340#511#0#HTML" expanded="true" />
-            <element signature="e#380#488#0#HTML" expanded="true" />
-            <element signature="e#544#773#0#HTML" expanded="true" />
-            <element signature="e#578#753#0#HTML" expanded="true" />
-            <element signature="e#786#3547#0#HTML" expanded="true" />
-            <element signature="e#987#2323#0#HTML" expanded="true" />
-            <element signature="e#1037#1444#0#HTML" expanded="true" />
-            <element signature="e#1095#1417#0#HTML" expanded="true" />
-            <element signature="e#1148#1386#0#HTML" expanded="true" />
-            <element signature="e#1465#1872#0#HTML" expanded="true" />
-            <element signature="e#1523#1845#0#HTML" expanded="true" />
-            <element signature="e#1576#1814#0#HTML" expanded="true" />
-            <element signature="e#1893#2300#0#HTML" expanded="true" />
-            <element signature="e#1951#2273#0#HTML" expanded="true" />
-            <element signature="e#2004#2242#0#HTML" expanded="true" />
-            <element signature="e#2383#2576#0#HTML" expanded="true" />
-            <element signature="e#2672#3056#0#HTML" expanded="true" />
-            <element signature="e#3112#3467#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,13 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#58#722#0#HTML" expanded="true" />
-            <element signature="e#90#408#0#HTML" expanded="true" />
-            <element signature="e#417#711#0#HTML" expanded="true" />
-            <element signature="e#466#696#0#HTML" expanded="true" />
-            <element signature="e#553#676#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,9 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-          <folding>
-            <element signature="e#285#838#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,27 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="62" column="97" selection-start-line="62" selection-start-column="81" selection-end-line="62" selection-end-column="97" />
-          <folding>
-            <element signature="e#50#113#0#HTML" expanded="true" />
-            <element signature="e#192#530#0#HTML" expanded="true" />
-            <element signature="e#226#323#0#HTML" expanded="true" />
-            <element signature="e#340#511#0#HTML" expanded="true" />
-            <element signature="e#380#488#0#HTML" expanded="true" />
-            <element signature="e#544#773#0#HTML" expanded="true" />
-            <element signature="e#578#753#0#HTML" expanded="true" />
-            <element signature="e#987#2323#0#HTML" expanded="true" />
-            <element signature="e#1037#1444#0#HTML" expanded="true" />
-            <element signature="e#1095#1417#0#HTML" expanded="true" />
-            <element signature="e#1148#1386#0#HTML" expanded="true" />
-            <element signature="e#1465#1872#0#HTML" expanded="true" />
-            <element signature="e#1523#1845#0#HTML" expanded="true" />
-            <element signature="e#1576#1814#0#HTML" expanded="true" />
-            <element signature="e#1893#2300#0#HTML" expanded="true" />
-            <element signature="e#1951#2273#0#HTML" expanded="true" />
-            <element signature="e#2004#2242#0#HTML" expanded="true" />
-            <element signature="e#2383#2575#0#HTML" expanded="true" />
-            <element signature="e#3110#3464#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,10 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
-          <folding>
-            <element signature="e#99#1053#0" expanded="true" />
-            <element signature="e#195#1038#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,28 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="105" column="7" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="105" selection-end-column="7" />
-          <folding>
-            <element signature="e#99#1062#0" expanded="true" />
-            <element signature="e#195#1047#0" expanded="true" />
-            <element signature="e#1098#1862#0" expanded="true" />
-            <element signature="e#1144#1854#0" expanded="true" />
-            <element signature="e#3076#3178#0" expanded="true" />
-            <element signature="e#3151#3175#0" expanded="true" />
-            <element signature="e#3145#3299#0" expanded="true" />
-            <element signature="e#3594#3883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blueprints/questions/elective_courses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="212" column="20" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#1956#9776#0" expanded="true" />
-            <element signature="e#40019#59059#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,107 +870,188 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#1332#2910#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/checking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-701" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/checking.py" />
     <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/score_dataset/score_and_grade_processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="155" column="28" lean-forward="true" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/cluster_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/kmeans_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/processedlistofdictionaries.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/blueprints/questions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/ai_cluster.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/software_eng_cluster.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/computer_networks.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="das://2c72a537-0aac-4b2b-9df8-19c625cc2b0a/schema/main/table/users_credential">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/system_eng_cluster.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/processed_questions_and_answers.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/cluster_process.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/kmeans_cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueprints/questions/elective_courses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="212" column="20" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Prediction/Prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="108">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/processed_questions_and_answers.py">
+    <entry file="file://$PROJECT_DIR$/first_time_server_run.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueprints/questions/views.py">
+    <entry file="file://$PROJECT_DIR$/models/Prediction/Training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2257">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="77">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#25322#41628#0" expanded="true" />
+            <element signature="e#26#94#1" expanded="true" />
+            <element signature="e#195#214#0" expanded="true" />
+            <element signature="e#2436#3497#0" expanded="true" />
+            <element signature="e#4942#6885#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/ai_cluster.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/system_eng_cluster.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/software_eng_cluster.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/aos_questions_and_answer/dataset/clustering/computer_networks.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/database.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_used/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="63" />
+        <state relative-caret-position="98">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="e#26#94#1" expanded="true" />
+            <element signature="e#191#210#0" expanded="true" />
+            <element signature="e#2287#3333#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://2c72a537-0aac-4b2b-9df8-19c625cc2b0a/schema/main/table/users_credential">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/models/training_models_used/linear_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="e#24#92#1" expanded="true" />
+            <element signature="e#107#126#0" expanded="true" />
+            <element signature="e#2189#3234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/training_models_used/kernel_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="e#24#92#1" expanded="true" />
+            <element signature="e#107#126#0" expanded="true" />
+            <element signature="e#2186#3231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/training_models_used/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="70" />
+          <folding>
+            <element signature="e#25#93#1" expanded="true" />
+            <element signature="e#191#210#0" expanded="true" />
+            <element signature="e#2834#3872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/training_models_used/logistic_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="e#25#93#1" expanded="true" />
+            <element signature="e#200#219#0" expanded="true" />
+            <element signature="e#2217#3271#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

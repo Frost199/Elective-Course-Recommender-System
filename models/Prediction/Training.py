@@ -1,5 +1,5 @@
 
-# K-Nearest Neighbours (KNN)
+# Decision Tree Classifier (DTC)
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -9,7 +9,7 @@ from sklearn.externals import joblib
 from sklearn.utils import column_or_1d
 
 
-class KnnTraining(object):
+class DecisionTreeClassifier(object):
 
     def __init__(self):
         self.X = None
