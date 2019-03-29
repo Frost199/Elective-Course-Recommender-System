@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="154daea8-2601-4582-92d6-ec06af62c965" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/training_models_used/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/training_models_used/naive_bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3f59fce5-f204-47d6-b46d-b62c7386f71d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/525aa793-d230-4c8c-8bab-9f305fd52b69.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9376f095-36d5-4d6a-a7ca-5c76de29b0cb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/Credentials.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_time_server_run.txt" beforeDir="false" afterPath="$PROJECT_DIR$/first_time_server_run.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Prediction/Prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Prediction/Prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Prediction/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Prediction/Training.py" afterDir="false" />
-    </list>
+    <list default="true" id="154daea8-2601-4582-92d6-ec06af62c965" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +97,7 @@
         </entry>
       </file>
       <file leaf-file-name="decision_tree_classifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py">
+        <entry file="file://$PROJECT_DIR$/models/training_models_tested/decision_tree_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
@@ -126,7 +112,7 @@
         </entry>
       </file>
       <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/training_models_used/linear_svm.py">
+        <entry file="file://$PROJECT_DIR$/models/training_models_tested/linear_svm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
               <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
@@ -140,7 +126,7 @@
         </entry>
       </file>
       <file leaf-file-name="kernel_svm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/training_models_used/kernel_svm.py">
+        <entry file="file://$PROJECT_DIR$/models/training_models_tested/kernel_svm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
               <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
@@ -154,7 +140,7 @@
         </entry>
       </file>
       <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/training_models_used/knn.py">
+        <entry file="file://$PROJECT_DIR$/models/training_models_tested/knn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
               <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="70" />
@@ -168,7 +154,7 @@
         </entry>
       </file>
       <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/training_models_used/logistic_regression.py">
+        <entry file="file://$PROJECT_DIR$/models/training_models_tested/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
@@ -182,7 +168,7 @@
         </entry>
       </file>
       <file leaf-file-name="naive_bayes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/training_models_used/naive_bayes.py">
+        <entry file="file://$PROJECT_DIR$/models/training_models_tested/naive_bayes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
@@ -381,7 +367,7 @@
               <item name="MscWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="MscWeb" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="training_models_used" type="462c0819:PsiDirectoryNode" />
+              <item name="training_models_tested" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MscWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -982,7 +968,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/training_models_used/decision_tree_classifier.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_tested/decision_tree_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
@@ -995,7 +981,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/training_models_used/naive_bayes.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_tested/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
@@ -1007,7 +993,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/training_models_used/linear_svm.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_tested/linear_svm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
@@ -1019,7 +1005,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/training_models_used/kernel_svm.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_tested/kernel_svm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="70" />
@@ -1031,7 +1017,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/training_models_used/knn.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_tested/knn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="70" />
@@ -1043,7 +1029,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/training_models_used/logistic_regression.py">
+    <entry file="file://$PROJECT_DIR$/models/training_models_tested/logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
